@@ -89,3 +89,5 @@ node_modules/
 # ===============================
 *.swp
 *.swo
+.env
+application.properties (optional sensitive parts)
