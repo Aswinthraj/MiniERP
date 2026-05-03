@@ -22,7 +22,7 @@ public class JwtFilter extends OncePerRequestFilter {
         String path = req.getRequestURI();
 
         // Allow public endpoints
-        if (path.equals("/login") || path.equals("/register")
+        if ( path.startsWith("/auth") || path.equals("/") ||  path.equals("/login") || path.equals("/register")
                 || path.contains("swagger") || path.contains("api-docs")) {
             chain.doFilter(request, response);
             return;

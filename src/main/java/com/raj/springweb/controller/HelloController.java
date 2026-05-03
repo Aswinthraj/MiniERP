@@ -93,6 +93,10 @@ public class HelloController {
 
         return "User registered successfully";
     }
+    @GetMapping("/")
+    public String home() {
+        return "MiniERP Backend is Live";
+    }
 
 }
 
